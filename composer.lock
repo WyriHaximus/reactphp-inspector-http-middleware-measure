@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e7dd6b790f9853fecdbc5cca14d59c59",
+    "content-hash": "64fa4c18b41aba0f42c762bec91cbd20",
     "packages": [
         {
             "name": "api-clients/rx",
@@ -874,17 +874,60 @@
             "time": "2018-06-19T20:43:13+00:00"
         },
         {
+            "name": "wyrihaximus/react-http-middleware-measure",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WyriHaximus/reactphp-http-middleware-measure.git",
+                "reference": "ed58d51795573782eae76c182d12d9b7d6854cce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WyriHaximus/reactphp-http-middleware-measure/zipball/ed58d51795573782eae76c182d12d9b7d6854cce",
+                "reference": "ed58d51795573782eae76c182d12d9b7d6854cce",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2",
+                "psr/http-message": "^1.0",
+                "react/http": "^0.8.0"
+            },
+            "require-dev": {
+                "api-clients/test-utilities": "^5.1",
+                "cakephp/collection": "^3.6",
+                "ringcentral/psr7": "^1.2.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WyriHaximus\\React\\Http\\Middleware\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "ceesjank@gmail.com"
+                }
+            ],
+            "description": "react/http middleware that gathers metrics on request passing through",
+            "time": "2018-09-13T06:04:26+00:00"
+        },
+        {
             "name": "wyrihaximus/react-inspector",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/reactphp-inspector.git",
-                "reference": "e0002e7536f1ba701e8d04f2921fd705b6218f36"
+                "reference": "51ff207c27784dea1512996fd3efa9e1653cbc80"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/reactphp-inspector/zipball/e0002e7536f1ba701e8d04f2921fd705b6218f36",
-                "reference": "e0002e7536f1ba701e8d04f2921fd705b6218f36",
+                "url": "https://api.github.com/repos/WyriHaximus/reactphp-inspector/zipball/51ff207c27784dea1512996fd3efa9e1653cbc80",
+                "reference": "51ff207c27784dea1512996fd3efa9e1653cbc80",
                 "shasum": ""
             },
             "require": {
@@ -941,7 +984,7 @@
                 }
             ],
             "description": "Inspect react/* packages for metrics and other insights                               ",
-            "time": "2018-06-30T14:45:43+00:00"
+            "time": "2018-09-10T20:17:25+00:00"
         },
         {
             "name": "wyrihaximus/ticking-promise",
@@ -2935,16 +2978,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "7.3.4",
+            "version": "7.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "0356331bf62896dc56e3a15030b23b73f38b2935"
+                "reference": "7b331efabbb628c518c408fdfcaf571156775de2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/0356331bf62896dc56e3a15030b23b73f38b2935",
-                "reference": "0356331bf62896dc56e3a15030b23b73f38b2935",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/7b331efabbb628c518c408fdfcaf571156775de2",
+                "reference": "7b331efabbb628c518c408fdfcaf571156775de2",
                 "shasum": ""
             },
             "require": {
@@ -3015,7 +3058,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2018-09-05T09:58:53+00:00"
+            "time": "2018-09-08T15:14:29+00:00"
         },
         {
             "name": "pimple/pimple",
@@ -4443,6 +4486,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "wyrihaximus/react-http-middleware-measure": 20,
         "wyrihaximus/react-inspector": 20
     },
     "prefer-stable": false,

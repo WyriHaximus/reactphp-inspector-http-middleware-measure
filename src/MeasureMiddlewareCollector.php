@@ -1,22 +1,21 @@
 <?php declare(strict_types=1);
 
-namespace WyriHaximus\React\Http\Middleware;
+namespace WyriHaximus\React\Inspector\Http\Middleware;
 
 use Rx\ObservableInterface;
+use WyriHaximus\React\Http\Middleware\MeasureMiddleware;
 use WyriHaximus\React\Inspector\CollectorInterface;
 use WyriHaximus\React\Inspector\Metric;
 use function ApiClients\Tools\Rx\observableFromArray;
 
 final class MeasureMiddlewareCollector implements CollectorInterface
 {
-    /**
-     * @var MeasureMiddleware[]
-     */
-    private $middlewares = [];
+    /** @var MeasureMiddleware[] */
+    private $middleware = [];
 
     public function register(string $key, MeasureMiddleware $middleware)
     {
-        $this->middlewares[$key] = $middleware;
+        $this->middleware[$key] = $middleware;
     }
 
     public function collect(): ObservableInterface
@@ -27,13 +26,12 @@ final class MeasureMiddlewareCollector implements CollectorInterface
          * @var string            $key
          * @var MeasureMiddleware $middleware
          */
-        foreach ($this->middlewares as $key => $middleware) {
+        foreach ($this->middleware as $key => $middleware) {
             /** @var Metric $metric */
-            foreach ($middleware->collect() as $metric) {
+            foreach ($middleware->collect() as $metricKey => $metricValue) {
                 $metrics[] = new Metric(
-                    $key . '.' . $metric->getKey(),
-                    $metric->getValue(),
-                    $metric->getTime()
+                    $key . '.' . $metricKey,
+                    $metricValue
                 );
             }
         }
@@ -43,6 +41,6 @@ final class MeasureMiddlewareCollector implements CollectorInterface
 
     public function cancel(): void
     {
-        $this->middlewares = [];
+        $this->middleware = [];
     }
 }
