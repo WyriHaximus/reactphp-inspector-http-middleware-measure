@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "64fa4c18b41aba0f42c762bec91cbd20",
+    "content-hash": "454edc32ce19c64fefc0c059925cbd6b",
     "packages": [
         {
             "name": "api-clients/rx",
@@ -879,12 +879,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/reactphp-http-middleware-measure.git",
-                "reference": "ed58d51795573782eae76c182d12d9b7d6854cce"
+                "reference": "488f89aab979bf00da190036940a1ea38969e7cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/reactphp-http-middleware-measure/zipball/ed58d51795573782eae76c182d12d9b7d6854cce",
-                "reference": "ed58d51795573782eae76c182d12d9b7d6854cce",
+                "url": "https://api.github.com/repos/WyriHaximus/reactphp-http-middleware-measure/zipball/488f89aab979bf00da190036940a1ea38969e7cc",
+                "reference": "488f89aab979bf00da190036940a1ea38969e7cc",
                 "shasum": ""
             },
             "require": {
@@ -913,8 +913,8 @@
                     "email": "ceesjank@gmail.com"
                 }
             ],
-            "description": "react/http middleware that gathers metrics on request passing through",
-            "time": "2018-09-13T06:04:26+00:00"
+            "description": "react/http middleware that gathers metrics on requests passing through",
+            "time": "2018-09-14T05:58:54+00:00"
         },
         {
             "name": "wyrihaximus/react-inspector",
@@ -2792,20 +2792,23 @@
         },
         {
             "name": "phpunit/php-file-iterator",
-            "version": "2.0.1",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-file-iterator.git",
-                "reference": "cecbc684605bb0cc288828eb5d65d93d5c676d3c"
+                "reference": "050bedf145a257b1ff02746c31894800e5122946"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-file-iterator/zipball/cecbc684605bb0cc288828eb5d65d93d5c676d3c",
-                "reference": "cecbc684605bb0cc288828eb5d65d93d5c676d3c",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-file-iterator/zipball/050bedf145a257b1ff02746c31894800e5122946",
+                "reference": "050bedf145a257b1ff02746c31894800e5122946",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.1"
             },
             "type": "library",
             "extra": {
@@ -2835,7 +2838,7 @@
                 "filesystem",
                 "iterator"
             ],
-            "time": "2018-06-11T11:44:00+00:00"
+            "time": "2018-09-13T20:33:42+00:00"
         },
         {
             "name": "phpunit/php-text-template",

@@ -1,6 +1,6 @@
 {
     "name": "wyrihaximus/react-inspector-http-middleware-measure",
-    "description": "react/http middleware that gathers metrics on request passing through",
+    "description": "ReactPHP Inspector collector for wyrihaximus/react-http-middleware-measure",
     "license": "MIT",
     "authors": [
         {
@@ -10,8 +10,6 @@
     ],
     "require": {
         "php": "^7.2",
-        "psr/http-message": "^1.0",
-        "react/http": "^0.8.0",
         "wyrihaximus/react-http-middleware-measure": "dev-master",
         "wyrihaximus/react-inspector": "dev-master"
     },
@@ -38,7 +36,7 @@
     "extra": {
         "react-inspector": {
             "collectors": {
-                "WyriHaximus\\React\\Http\\Middleware": "src/"
+                "WyriHaximus\\React\\Inspector\\Http\\Middleware": "src/"
             }
         }
     },
